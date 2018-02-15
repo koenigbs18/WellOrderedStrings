@@ -6,12 +6,12 @@ Author: Brett Koenig
 School: UW-Whitewater
 Email: brettkoenig@hotmail.com
 Description: A well ordered string is defined as a string sorted ascendingly by its ASCII value
-			 This program prints all possible permutations of well ordered strings of given length.
-			 Example: ACDEF, ACDEG... ACDyz, ACEFG, ACEFH...
-			 Note: This includes all characters between ASCII values 65-122 or 'A' to 'z' (58 elements)
+	     This program prints all possible permutations of well ordered strings of given length.
+	     Example: ACDEF, ACDEG... ACDyz, ACEFG, ACEFH...
+	     Note: This includes all characters between ASCII values 65-122 or 'A' to 'z' (58 elements)
 
 Usage: Input any number of digits between 1-58.  The permutated strings and the total strings
-will be output to a text file "WellOrderedStrings.txt" in the working directory.
+       will be output to a text file "WellOrderedStrings.txt" in the working directory.
 
 Compatability: Tested on a Windows system using C++17.
 
@@ -25,13 +25,13 @@ namespace WellOrdered {
 	Function: PrintWellOrdered
 
 	Desc: Calculates all permutations of a well-ordered string initialized as 'ABC...'
-		  based on the passed size.
+	      based on the passed size.
 
 	Pre: The function requires the size of the well-ordered string to be passed.
 
 	Post: The function will return the number of permutations 
-		  and write all permutations and total permutation count to
-		  a file named "WellOrderedStrings.txt" in the working directory.
+	      and write all permutations and total permutation count to
+	      a file named "WellOrderedStrings.txt" in the working directory.
 	*/
 	int PrintWellOrdered(int size) {
 		// Open file for writing strings
@@ -50,7 +50,7 @@ namespace WellOrdered {
 		// Well ordered algorithm
 		while (str != GetMaxWellOrderedString(size)) { // Loop until we have reached our final string
 
-													   // Max size case
+			// Max size case
 			if (index == str.size() - 1) {
 				// For our max case, we only need to check if the character is the max possible ascii 'z'
 				while (str.at(index) != 'z') {
@@ -101,7 +101,7 @@ namespace WellOrdered {
 	Function: GetMaxWellOrderedString
 
 	Desc: Calculates the maximum (highest ascii values, ascending) well-ordered
-		  string given the passed length.
+	      string given the passed length.
 
 	Pre: The function must be passed the size of the well-ordered string.
 
@@ -121,7 +121,7 @@ namespace WellOrdered {
 	Desc: Initializes a well-ordered string.
 
 	Pre: The function is passed a string to be initialized, and the length 
-		 of the desired well-ordered string.
+	     of the desired well-ordered string.
 
 	Post: void (string modified through reference).
 	*/
