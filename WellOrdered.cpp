@@ -85,7 +85,7 @@ namespace WellOrdered {
 				file << str << "\n";
 				stringCount++;
 
-				index = size - 1; // increment our index
+				index = size - 1; // reset our index to the max size (-1 to play nice)
 				continue;
 			}
 
