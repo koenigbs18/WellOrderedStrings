@@ -7,4 +7,6 @@ see "WellOrdered.cpp" for full function documentation.
 
 Author: Brett Koenig
 
-Thanks to Carl Erdman for some inspiration & contribution.
+Contact Info: KoenigBS18@uww.edu
+
+Thanks to Carl Erdman at UW-Whitewater for some inspiration & contribution.
