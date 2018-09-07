@@ -13,7 +13,7 @@ Description: A well ordered string is defined as a string sorted ascendingly by 
 Usage: Input any number of digits between 1-58.  The permutated strings and the total strings
        will be output to a text file "WellOrderedStrings.txt" in the working directory.
 
-Compatability: Tested on a Windows system using C++17.
+Compatibility: Tested on a Windows system using C++17.
 
 */
 
